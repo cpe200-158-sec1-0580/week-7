@@ -23,7 +23,7 @@ namespace twozerofoureight
         }
 
         public TwoZeroFourEightModel(int size)
-        {
+        { 
             boardSize = size;
             board = new int[boardSize, boardSize];
             var range = Enumerable.Range(0, boardSize);
