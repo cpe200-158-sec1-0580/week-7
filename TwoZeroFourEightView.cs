@@ -15,6 +15,7 @@ namespace twozerofoureight
         Model model;
         Controller controller;
 
+
         public TwoZeroFourEightView()
         {
             InitializeComponent();
@@ -23,6 +24,11 @@ namespace twozerofoureight
             controller = new TwoZeroFourEightController();
             controller.AddModel(model);
             controller.ActionPerformed(TwoZeroFourEightController.LEFT);
+            scooreview sc = new scooreview();
+            sc.Visible = true;
+            sc.Enabled = true;
+            model.AttachObserver(sc);
+
         }
 
         public void Notify(Model m)

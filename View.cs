@@ -9,5 +9,6 @@ namespace twozerofoureight
     public interface View
     {
         void Notify(Model m);
+
     }
 }
