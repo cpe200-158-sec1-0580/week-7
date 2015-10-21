@@ -77,42 +77,32 @@ namespace twozerofoureight
             UpdateTile(lbl31, board[3, 1]);
             UpdateTile(lbl32, board[3, 2]);
             UpdateTile(lbl33, board[3, 3]);
+            label1.Text = ((TwoZeroFourEightModel)model).Score.ToString();
         }
-        public  int score = 4;
-
-        public override string ToString()
-
-        {
-
-            return "" + score + "";
-        }
+       
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
             controller.ActionPerformed(TwoZeroFourEightController.LEFT);
-            score += 2;
-            label1.Text = ToString();
+            
         } 
 
         private void btnRight_Click(object sender, EventArgs e)
         {
             controller.ActionPerformed(TwoZeroFourEightController.RIGHT);
-            score += 2;
-            label1.Text = ToString();
+            
         }
 
         private void btnUp_Click(object sender, EventArgs e)
         {
             controller.ActionPerformed(TwoZeroFourEightController.UP);
-            score += 2;
-            label1.Text = ToString();
+            
         }
 
         private void btnDown_Click(object sender, EventArgs e)
         {
             controller.ActionPerformed(TwoZeroFourEightController.DOWN);
-            score += 2;
-            label1.Text = ToString();
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
